@@ -65,9 +65,12 @@ public class DialogueManager : MonoBehaviour
 
     void ShowCurrentLine()
     {
-        if (currentDialogue != null)
+        if (currentDialogue != null && currenLineIndex < currentDialogue.dialogueLines.Count)
         {
-            StopCoroutine(typingCoroutine);
+            if (currentDialogue != null)
+            {
+                StopCoroutine(typingCoroutine);
+            }
         }
 
 
