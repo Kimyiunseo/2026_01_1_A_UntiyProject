@@ -55,7 +55,7 @@ public class TweenSample : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            PlayCountUp();
+            PlayCountUP();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
@@ -110,7 +110,7 @@ public class TweenSample : MonoBehaviour
             0.5f
         )
         .SetEase(Ease.OutQuad)
-        .Setld("CountTween");
+        .SetId("CountTween");
     }
 
     public void PlayColorFlash()
